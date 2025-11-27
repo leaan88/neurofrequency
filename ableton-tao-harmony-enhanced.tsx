@@ -147,7 +147,7 @@ const AbletonTaoHarmonyPro = () => {
     });
     
     // Crear melodía basada en la escala y longitud
-    const melodyNotes = [];
+    const melodyNotes: Array<{note: string, midiNote: number}> = [];
     const scaleNotes = currentScale.map(interval => (rootIndex + interval) % 12);
     
     // Generar una melodía en la escala seleccionada con la longitud especificada
